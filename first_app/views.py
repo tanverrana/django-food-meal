@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, './first_app/index.html', {'meal': [
+    return render(request, './first_app/index.html', {'meals': [
         {
             "strMeal": "BeaverTails",
             "strMealThumb": "https://www.themealdb.com/images/media/meals/ryppsv1511815505.jpg",
