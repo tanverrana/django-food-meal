@@ -2,7 +2,7 @@
 {% block title %}Home Page{%endblock%}
 {% block content %} Food List
 
-<section>
+<section class="p-5">
 
     <div class="row row-cols-1 row-cols-md-3 g-4">
         {% for meal in meals %}
@@ -10,8 +10,9 @@
             <div class="card h-100">
                 <img src={{meal.strMealThumb}} class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">{{meal.strMeal}}</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    <h4 class="card-title">{{meal.strMeal}}</h4>
+                    <p class="card-text" style="font-size: medium;">This is a longer card with supporting text below as
+                        a natural lead-in to
                         additional content. This content is a little bit longer.</p>
                 </div>
             </div>
@@ -19,6 +20,4 @@
         {% endfor %}
     </div>
 </section>
-
-
 {% endblock %}
